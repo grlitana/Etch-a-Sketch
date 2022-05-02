@@ -1,0 +1,85 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --header: #111a20;
+    --primary-yellow: rgba(255, 255, 0, 0.814);
+}
+
+.grid-container{
+    align-self: center;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 12px;
+}
+
+/* .grid-element{
+    background-color: yellow;
+} */
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--primary-light);
+    /* color: var(--primary-light); */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    background-color: var(--header);
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 32px;
+    color: #fbe5ba;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    color: var(--primary-light);
+    font-size: 20px;
+    background-color: var(--header);
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-github {
+    color: var(--primary-light);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
